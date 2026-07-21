@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Collection from './pages/Collection';
+import SizeGuide from './pages/SizeGuide';
 import BackToTop from './components/BackToTop';
 
 function ScrollToTop() {
@@ -17,11 +18,12 @@ function ScrollToTop() {
 function AnimatedRoutes() {
   const location = useLocation();
   return (
-    <Routes location={location} key={location.pathname}>
-      <Route path="/" element={<Home />} />
-      <Route path="/product/:id" element={<Product />} />
-      <Route path="/collection" element={<Collection />} />
-    </Routes>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<Product />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/size-guide" element={<SizeGuide />} />
+      </Routes>
   );
 }
 

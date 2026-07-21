@@ -258,7 +258,7 @@
 .product-actions {
     display: flex;
     gap: var(--space-md);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
 }
 
 .btn-add-to-bag {
@@ -280,6 +280,17 @@
 .btn-wishlist:hover {
     border-color: var(--color-gold);
     color: var(--color-gold);
+}
+
+/* Secondary Actions */
+.product-secondary-actions {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.product-secondary-actions .btn {
+    flex: 1;
 }
 
 /* Product Accordion */

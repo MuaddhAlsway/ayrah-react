@@ -221,7 +221,7 @@ const Product = () => {
                     </button>
                   ))}
                 </div>
-                <a href="#size-guide" className="size-guide-link">Size Guide</a>
+                <Link to="/size-guide" className="size-guide-link">Size Guide</Link>
               </div>
 
               <div className="product-options reveal-up" ref={addRevealUp}>
@@ -237,6 +237,11 @@ const Product = () => {
                     />
                   ))}
                 </div>
+              </div>
+
+              <div className="product-secondary-actions reveal-up" ref={addRevealUp}>
+                <button className="btn btn-secondary">Ask About This</button>
+                <button className="btn btn-secondary">Schedule a Visit</button>
               </div>
 
               <div className="product-accordion">

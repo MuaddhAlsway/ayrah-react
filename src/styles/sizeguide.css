@@ -1,0 +1,244 @@
+/* ============================================
+   Size Guide Page
+   ============================================ */
+
+.sizeguide-hero {
+    padding: var(--space-4xl) 0 var(--space-2xl);
+    background: var(--color-ivory);
+    text-align: center;
+}
+
+.sizeguide-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-lg);
+}
+
+.sizeguide-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: rgba(13, 13, 13, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sizeguide-content {
+    padding: 0 0 var(--space-4xl);
+    background: var(--color-ivory);
+}
+
+/* How to Measure */
+.sizeguide-measurement {
+    margin-bottom: var(--space-4xl);
+}
+
+.sizeguide-measurement h2 {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.measurement-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.measurement-card {
+    text-align: center;
+    padding: var(--space-2xl) var(--space-lg);
+    background: var(--color-white);
+    border: 1px solid rgba(13, 13, 13, 0.06);
+    transition: var(--transition-smooth);
+}
+
+.measurement-card:hover {
+    box-shadow: 0 20px 60px rgba(13, 13, 13, 0.08);
+    transform: translateY(-4px);
+}
+
+.measurement-icon {
+    color: var(--color-gold);
+    margin-bottom: var(--space-lg);
+}
+
+.measurement-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+}
+
+.measurement-card p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: rgba(13, 13, 13, 0.6);
+}
+
+/* Size Table */
+.sizeguide-table-section {
+    margin-bottom: var(--space-4xl);
+}
+
+.sizeguide-table-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+.table-note {
+    text-align: center;
+    font-size: 0.9375rem;
+    color: rgba(13, 13, 13, 0.5);
+    margin-bottom: var(--space-2xl);
+}
+
+.size-table-wrapper {
+    overflow-x: auto;
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-white);
+}
+
+.size-table th {
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(13, 13, 13, 0.5);
+    border-bottom: 2px solid rgba(13, 13, 13, 0.08);
+    white-space: nowrap;
+}
+
+.size-table td {
+    padding: 1.25rem 1.5rem;
+    font-size: 0.9375rem;
+    color: var(--color-obsidian);
+    border-bottom: 1px solid rgba(13, 13, 13, 0.06);
+}
+
+.size-table tbody tr:hover {
+    background: rgba(200, 169, 107, 0.05);
+}
+
+.size-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(13, 13, 13, 0.2);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.size-badge.active {
+    background: var(--color-obsidian);
+    color: var(--color-ivory);
+    border-color: var(--color-obsidian);
+}
+
+/* Fitting Tips */
+.sizeguide-tips {
+    margin-bottom: var(--space-4xl);
+}
+
+.sizeguide-tips h2 {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.tip-card {
+    padding: var(--space-2xl) var(--space-lg);
+    border-top: 1px solid rgba(13, 13, 13, 0.1);
+}
+
+.tip-number {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--color-gold);
+    opacity: 0.5;
+    display: block;
+    margin-bottom: var(--space-lg);
+}
+
+.tip-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    margin-bottom: var(--space-sm);
+}
+
+.tip-card p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: rgba(13, 13, 13, 0.6);
+}
+
+/* CTA */
+.sizeguide-cta {
+    text-align: center;
+    padding: var(--space-3xl);
+    background: var(--color-stone);
+}
+
+.sizeguide-cta h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.sizeguide-cta p {
+    font-size: 1.0625rem;
+    color: rgba(13, 13, 13, 0.7);
+    margin-bottom: var(--space-xl);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .measurement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .measurement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 1rem;
+        font-size: 0.8125rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}

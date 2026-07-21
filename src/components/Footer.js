@@ -64,7 +64,7 @@ function Footer() {
               <li><Link to="/#contact">Contact Us</Link></li>
               <li><Link to="/#shipping">Shipping & Delivery</Link></li>
               <li><Link to="/#returns">Returns & Exchanges</Link></li>
-              <li><Link to="/#size-guide">Size Guide</Link></li>
+              <li><Link to="/size-guide">Size Guide</Link></li>
               <li><Link to="/#faq">FAQ</Link></li>
             </ul>
           </div>
