@@ -288,7 +288,7 @@ const Home = () => {
         <div className="container">
           <div className="story-grid">
             <div className="story-image reveal-left" ref={addRevealLeft}>
-              <img src={`${process.env.PUBLIC_URL}/img/7.avif`} alt="AYRAH Craftsmanship" className="story-image-placeholder"/>
+              <img src={`${process.env.PUBLIC_URL}/img/ABAYA.jpg.jpeg`} alt="AYRAH Craftsmanship" className="story-image-placeholder"/>
             </div>
             <div className="story-content">
               <p className="section-tag reveal-text" ref={addRevealText}>Our Heritage</p>
