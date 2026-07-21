@@ -239,15 +239,6 @@ const Product = () => {
                 </div>
               </div>
 
-              <div className="product-actions reveal-up" ref={addRevealUp}>
-                <button className="btn btn-primary btn-add-to-bag">Add to Bag</button>
-                <button className="btn-wishlist" aria-label="Add to Wishlist">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                  </svg>
-                </button>
-              </div>
-
               <div className="product-accordion">
                 <div className={`accordion-item${openAccordion === 0 ? ' active' : ''}`}>
                   <button className="accordion-header" onClick={() => toggleAccordion(0)}>
